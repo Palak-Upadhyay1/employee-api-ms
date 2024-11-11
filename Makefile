@@ -24,6 +24,9 @@ vet:
 docker-build:
 	docker build -t ${IMAGE_REGISTRY}/${IMAGE_NAME}:${APP_VERSION} -f Dockerfile .
 
+docker-run:
+	docker run -p 8083:8080 ${IMAGE_REGISTRY}/${IMAGE_NAME}:${APP_VERSION}
+
 docker-push:
 	docker push ${IMAGE_REGISTRY}/${IMAGE_NAME}:${APP_VERSION}
 
