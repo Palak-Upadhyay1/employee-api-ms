@@ -17,7 +17,7 @@ node {
     repo_ssh_url: "https://github.com/ayush090909/attendance-api.git",
     repo_branch: "main",
     repo_url_type: "http",
-    jenkins_git_creds_id: "github-cred",
+    jenkins_git_creds_id: "anuj-github-token",
     source_code_path: "",
      // Dependency Scanning
     dependency_check: false,
