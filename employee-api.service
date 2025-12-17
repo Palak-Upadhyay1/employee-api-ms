@@ -1,0 +1,14 @@
+# /etc/systemd/system/employee-api.service
+[Unit]
+Description=Employee API
+After=network.target
+
+[Service]
+WorkingDirectory=/home/ubuntu/employee-api
+ExecStart=/home/ubuntu/employee-api/employee-api
+Restart=always
+Environment=GIN_MODE=release
+
+[Install]
+WantedBy=multi-user.target
+
